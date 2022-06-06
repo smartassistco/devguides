@@ -1,9 +1,6 @@
-name: Issue
-description: Report an issue
-title: "[Issue]: "
-labels: ["issue", "triage"]
-assignees:
-  - stlln
+name: Dev Guide Issue
+description: Report an issue with a dev guide
+labels: ["devguide", "issue", "triage"]
 body:
   - type: input
     id: resource_link
