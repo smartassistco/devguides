@@ -24,9 +24,9 @@ body:
         - Other
     validations:
       required: true
-  - type: markdown
+  - type: textarea
     attributes:
-      value: |
-        Please describe the issue
+      label: Issue
+      description: Describe the issue
     validations:
       required: true
