@@ -1,0 +1,32 @@
+name: Issue
+description: Report an issue
+title: "[Issue]: "
+labels: ["issue", "triage"]
+assignees:
+  - stlln
+body:
+  - type: input
+    id: resource_link
+    attributes:
+      label: Resource Link
+      description: Link to the resource in the repo which has an issue
+      placeholder: ex. guides/angular/forms.md
+    validations:
+      required: true
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Issue Type
+      description: What is the kind of issue with the resource?
+      options:
+        - Typo
+        - Conceptual
+        - Other
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        Please describe the issue
+    validations:
+      required: true
