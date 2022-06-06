@@ -3,7 +3,7 @@ description: Report an issue with a dev guide
 labels: ["devguide", "issue", "triage"]
 body:
   - type: input
-    id: resource_link
+    id: resourcelink
     attributes:
       label: Resource Link
       description: Link to the resource in the repo which has an issue
@@ -11,7 +11,7 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: issue_type
+    id: issuetype
     attributes:
       label: Issue Type
       description: What is the kind of issue with the resource?
@@ -22,6 +22,7 @@ body:
     validations:
       required: true
   - type: textarea
+    id: issuedescription
     attributes:
       label: Issue
       description: Describe the issue
